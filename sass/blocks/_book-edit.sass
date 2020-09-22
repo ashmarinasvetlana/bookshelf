@@ -1,0 +1,75 @@
+.book
+    &-bg
+        position: fixed
+        top: 0
+        left: 0
+        z-index: 10588
+        width: 100%
+        height: 100%
+        overflow: hidden
+        background-color: rgba(0,0,0,.5)
+    &-edit
+        width: 100%
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        z-index: 999999
+        &__form
+            background-color: darken($bg,2)
+            padding: 60px 80px
+            width: 60%
+            margin: 0 auto
+            &-title
+                +h2
+                font-size: 40px
+                margin-top: 0px
+        &__input
+            display: block
+            margin-top: 5px
+            margin-bottom: 25px
+            background-color: transparent
+            border: 0.5px solid darken($bg,6)
+            width: 100%
+            height: 40px
+            padding: 15px
+            +text
+            color: $text-color
+        label
+            font-size: 14px
+            +reg
+            color: $text-color_80
+        &__buttons
+            display: flex
+            margin-top: 50px
+        &__btn
+            margin-right: 20px
+input[name="year"]
+    width: 20%
+@media (max-width: 990px)
+    .book
+        &-edit
+            &__form
+                width: 100%
+@media (max-width: 768px)
+    book
+        &-edit
+            &__form
+                padding: 64px
+    input[name="year"]
+        width: 30%
+@media (max-width: 480px)
+    .book
+        &-edit
+            &__form
+                padding: 32px
+                &-title
+                    font-size: 25px
+            &__buttons
+                flex-direction: column
+                margin-top: 40px
+            &__btn
+                margin-bottom: 25px
+                margin-right: 0px
+    input[name="year"]
+        width: 35%
+

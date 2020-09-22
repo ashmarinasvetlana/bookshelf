@@ -1,0 +1,49 @@
+
+
+@mixin reg {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+@mixin med {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+@mixin light {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+
+@mixin h2 { 
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: $text-color
+}
+
+@mixin h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 110%;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+
+@mixin text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: $text-color
+}
+
+
+
+
+
+
+
+

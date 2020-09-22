@@ -1,0 +1,121 @@
+.bookshelf
+    &__title
+        +med
+        font-size: 64px
+        color: $text-color
+        margin-top: 60px
+        margin-bottom: 50px
+    &__wrap
+        margin-top: 30px
+        background-color: darken($bg,2)
+    &__item
+        padding: 50px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        border-bottom: 0.5px solid #F5F5F5
+.book
+    &__name
+        +med
+        font-size: 25px
+        color: $text-color
+        line-height: 140%
+    &__author
+        +text
+    &__year
+        +text
+        color: $text-color_80
+        font-weight: 300
+    &__info
+        display: flex
+        width: 60%
+    &-wrap
+        max-width: 100px
+        max-height: 300px
+        &__img
+            max-width: 100%
+            height: auto
+    &-description
+        margin-left: 30px
+        &__item
+            margin: 0px
+            margin-bottom: 15px
+    &__description
+        display: flex
+        flex-direction: column
+        margin-left: 30px
+    &__buttons
+        margin-left: 50px
+.btn
+    &-approve
+        transition-duration: 1.2s
+        background-color: $approve-color
+        &:hover
+            transition-duration: 1.2s
+            background-color: darken($approve-color, 20)
+        &:active
+            background-color: lighten($approve-color, 20)
+       
+    &-attention
+        transition-duration: 1.2s
+        background-color: $attention-color
+        &:hover
+            background-color: darken($attention-color, 10)
+        &:active
+            background-color: lighten($attention-color, 10)
+           
+    +btn
+    &-big
+        +btn-big
+        &:hover
+            transition-duration: 1.2s
+            background-color: darken($approve-color, 20)
+      
+        &:active
+            background-color: lighten($approve-color, 20)
+@media (max-width: 768px)
+    .bookshelf
+        &__item
+            flex-direction: column
+            align-items: flex-start
+            padding: 32px
+        &__title
+            font-size: 55px
+    .book
+        &__name
+            font-size: 20px
+        &-wrap
+            max-width: 150px
+        &__info
+            width: 100%
+        &__buttons
+            display: flex
+            margin-top: 40px
+            margin-left: 0px
+        &__btn
+            margin-right: 30px
+@media (max-width: 480px)
+    .bookshelf
+        &__title
+            margin-top: 50px
+            margin-bottom: 30px
+            font-size: 35px
+    .book
+        &__buttons
+            flex-direction: column
+            margin-top: 40px
+            margin-right: 0px
+        &__info
+            flex-direction: column
+        &__btn
+            margin-bottom: 25px   
+        &__description
+            margin-top: 20px
+            margin-left: 0px
+        &-description
+            &__item
+                margin-bottom: 10px
+        
+ 
+            
+            

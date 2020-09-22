@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="address=no">
+	<meta name="description" content=""/>
+	<title></title>
+	<link rel="icon" type="image/x-icon" href="">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	
+	
+</head>
+<body>
+	<section class="bookshelf" id="bookshelf">
+		<div class="container">
+			<h1 class="bookshelf-title bookshelf__title">Книжная полка</h1>
+			<button data-addbook class="btn-big btn-add" id="btn-add">Добавить книгу</button>
+			<div class="bookshelf__wrap">
+				<!--
+				<div class="bookshelf__item book">
+					<div class="book__info">
+						<div class="book-wrap"><img src="img/1.webp" alt="" class="book-wrap__img"></div>
+					<div class="book__description book-description">
+						<h4 class="book__name book-description__item">JavaScript и Jquery</h4>
+					<p class="book__author book-description__item">Дэвид Сойер Макфарланд</p>
+					<span class="book__year book-description__item">2016</span>
+				</div>
+			</div>
+					<div class="book__buttons">
+						<button data-editbook class="book__btn btn btn-approve">Редактировать</button>
+						<button class="book__btn btn btn-attention">Удалить</button>
+					</div>
+				</div>
+				<div class="bookshelf__item book">
+					<div class="book__info">
+						<div class="book-wrap"><img src="img/2.webp" alt="" class="book-wrap__img"></div>
+					<div class="book__description book-description">
+						<h4 class="book__name book-description__item">Изучаем программирование на JavaScript</h4>
+					<p class="book__author book-description__item">Эрик Фримен, Элизабет Робсон</p>
+					<span class="book__year book-description__item">2017</span>
+				</div>
+			</div>
+						<div class="book__buttons">
+						<button class="book__btn btn btn-approve btn-edit">
+Редактировать
+					</button>
+					<button class="book__btn btn btn-attention btn-delite">Удалить</button>
+				</div>
+				</div>
+				<div class="bookshelf__item book">
+					<div class="book__info">
+						<div class="book-wrap"><img src="img/3.jpg" alt="" class="book-wrap__img"></div>
+					<div class="book__description book-description">
+						<h4 class="book__name book-description__item">
+Секреты JavaScript ниндзя
+					</h4>
+					<p class="book__author book-description__item">Джон Резиг, Беэр Бибо</p>
+					<span class="book__year book-description__item">2017</span>
+				</div>
+			</div>
+						<div class="book__buttons">
+						<button class="book__btn btn btn-approve btn-edit">
+Редактировать
+					</button>
+					<button class="book__btn btn btn-attention btn-delite">Удалить</button>
+				</div>
+				</div>
+				<div class="bookshelf__item book">
+					<div class="book__info"><div class="book-wrap"><img src="img/4.webp" alt="" class="book-wrap__img"></div>
+					<div class="book__description book-description"><h4 class="book__name book-description__item">ES6 и не только</h4>
+					<p class="book__author book-description__item">Кайл Симпсон</p>
+					<span class="book__year book-description__item">2017</span></div>
+				</div>
+					<div class="book__buttons">
+						<button class="book__btn btn btn-approve btn-edit">
+Редактировать
+					</button>
+					<button class="book__btn btn btn-attention btn-delite">Удалить</button>
+				</div>
+				</div>
+					
+				-->
+
+			</div>
+		
+		</div>
+		
+	</section>
+	
+       <div class="book-bg hide fade">
+            <div class="book-edit">
+				<div class="container">
+					<form class="book-edit__form" id="bookForm">
+						<h3 class="book-edit__form-title">Редактирование книги</h3>
+						<label for="name" id="name__label">Наименование</label>
+						<input name="name" type="text" class="book-edit__input" value = "" >
+						<label for="author" id = "author__label">Автор</label>
+						<input name="author" type="text" class="book-edit__input">
+						<label for="year" id="year__label">Год выпуска</label>
+						<input  name="year" type="number"  class="book-edit__input">
+						<label for="img" id="img__label" >Изображение</label>
+						<input  name="img" type="text" class="book-edit__input">
+						
+						<div class="book-edit__buttons">
+	<button type = "button" data-savebook class="btn btn-approve book-edit__btn btn-save">
+		Сохранить
+	</button>
+	<button type = "button" data-close class="btn btn-attention book-edit__btn btn-cancel">
+		Отменить
+	</button>
+						</div>
+						
+					</form>
+				</div>
+              
+			</div>
+		</div>
+       
+   
+<script src="js/script.js"></script>  
+
+</body>
+</html>
